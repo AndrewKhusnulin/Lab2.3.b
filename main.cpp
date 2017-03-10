@@ -49,17 +49,14 @@ public:
 		this->Area3d_t = 'C';
 		this->h = z;
 		this->v = 3.14*pow(x, 2)*z;
-		
 	}
 	void print()
 	{
-		cout << "\n";
+		Area2d::print();
 		cout << "Z = " << h << endl;
 		cout << "V(" << Area3d_t << ") = " << v << endl;
-
 	}
 };
-
 int _tmain(int argc, _TCHAR* argv[])
 {
 	Area2d f1(10);
